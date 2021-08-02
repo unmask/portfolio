@@ -1,0 +1,28 @@
+@import "./../../assets/css/variables.scss";
+
+.noMatchFound {
+    background-color: $light_rose;
+    width: 100%;
+    text-align: center;
+
+    &__background-gif {
+        height: 98vh;
+    }
+}
+
+/* Mobile Screen */
+
+@media only screen and (max-width: 767px) {
+    .noMatchFound {
+        height: 100vh;
+        background-color: $light_rose;
+        text-align: left;
+
+        &__background-gif {
+            position: absolute;
+            top: 35%;
+            height: unset;
+            width: 100%;
+        }
+    }
+}
